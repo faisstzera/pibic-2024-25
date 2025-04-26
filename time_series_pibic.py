@@ -11,7 +11,7 @@ import time
 import gc
 from datetime import datetime
 
-# função para normalizar as séries na mesma escala (processamento inplace)
+# função para normalizar as séries na mesma escala
 def znorm(x):
     return (x - np.mean(x)) / np.std(x)
 
