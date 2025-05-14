@@ -81,6 +81,7 @@ def transform_series(series, representation):
 # função para aplicar PAA em séries com muitas dimensões antes do processamento
 def apply_dimension_reduction(series):
     # verificar se a série tem mais de 30 dimensões
+    print(f"Dimensões da série: {len(series)}")
     if len(series) > 30:
         return PAA(series, 30)
     return series
@@ -167,7 +168,7 @@ results = pd.DataFrame(columns=[
 ])
 
 # se quiser rodar para mais datasets, basta incluir ou remover dessa listas
-datasets = ["Cricket"]
+datasets = ["AtrialFibrillation"]
 for dataset in datasets:
     try:
         print(f"Processando dataset {dataset}")
