@@ -81,7 +81,6 @@ def transform_series(series, representation):
 # função para aplicar PAA em séries com muitas dimensões antes do processamento
 def apply_dimension_reduction(series):
     # verificar se a série tem mais de 30 dimensões
-    print(f"Dimensões da série: {len(series)}")
     if len(series) > 30:
         return PAA(series, 30)
     return series
@@ -154,26 +153,27 @@ concatenate_types = ["pre_transform", "post_transform"]
 # classificador base
 classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))
 
-results = pd.DataFrame(columns=[
-    "dataset",
-    "representation", 
-    "representation_transform_time",
-    "concatenation_type",
-    "accuracy",
-    "convolution_algorithm",
-    "convolution_time", 
-    "classification_algorithm",
-    "train_time",
-    "validation_time"
-])
-
 # se quiser rodar para mais datasets, basta incluir ou remover dessa listas
-datasets = ["AtrialFibrillation"]
+datasets = ["FingerMovements", "HandMovementDirection", "Handwriting", "NATOPS", "PEMS-SF", "RacketSports"]
 for dataset in datasets:
+    print(f"Processando dataset {dataset}")
+    dataset_start = time.time()
+    
+    # Initialize a new DataFrame for each dataset
+    dataset_results = pd.DataFrame(columns=[
+        "dataset",
+        "representation", 
+        "representation_transform_time",
+        "concatenation_type",
+        "accuracy",
+        "convolution_algorithm",
+        "convolution_time", 
+        "classification_algorithm",
+        "train_time",
+        "validation_time"
+    ])
+
     try:
-        print(f"Processando dataset {dataset}")
-        dataset_start = time.time()
-        
         data = load_dataset(dataset)
         X_train, y_train = data["X_train"], data["y_train"]
         X_test, y_test = data["X_test"], data["y_test"]
@@ -184,81 +184,90 @@ for dataset in datasets:
 
         print(f"Dataset {dataset} carregado em {time.time() - dataset_start} segundos")
 
-        for representation in tqdm(representations, desc="Processing representations"):
+        for representation in tqdm(representations, desc=f"Processing reps for {dataset}"):
             for concat_type in concatenate_types:
-                transform_start = time.time()
-                X_train_transformed = dimensions_concatenate(X_train, concat_type, representation)
-                X_test_transformed = dimensions_concatenate(X_test, concat_type, representation)
-                transform_time = time.time() - transform_start
+                try: # New try-except block for processing errors within a specific representation/concatenation type
+                    transform_start = time.time()
+                    X_train_transformed = dimensions_concatenate(X_train, concat_type, representation)
+                    X_test_transformed = dimensions_concatenate(X_test, concat_type, representation)
+                    transform_time = time.time() - transform_start
 
-                # Ridge Classification
-                train_start = time.time()
-                classifier.fit(X_train_transformed, y_train)
-                train_time = time.time() - train_start
-
-                valid_start = time.time()
-                accuracy = classifier.score(X_test_transformed, y_test)
-                valid_time = time.time() - valid_start
-
-                new_result = {
-                    "dataset": dataset,
-                    "representation": representation,
-                    "representation_transform_time": transform_time,
-                    "concatenation_type": concat_type,
-                    "accuracy": accuracy,
-                    "convolution_algorithm": None,
-                    "convolution_time": 0,
-                    "classification_algorithm": "Ridge",
-                    "train_time": train_time,
-                    "validation_time": valid_time
-                }
-                results.loc[len(results)] = new_result
-                
-                classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))
-                gc.collect()
-
-                # classificação com convolução (Rocket e MiniRocket)
-                for conv_algo in [Rocket, MiniRocket]:
-                    algo_name = conv_algo.__name__
-                    conv_start = time.time()
-                    algorithm = conv_algo(n_kernels=10000, n_jobs=-1, random_state=6)
-                    algorithm.fit(X_train_transformed)
-                    X_train_conv = algorithm.transform(X_train_transformed)
-                    X_test_conv = algorithm.transform(X_test_transformed)
-                    conv_time = time.time() - conv_start
-
+                    # Ridge Classification (original)
                     train_start = time.time()
-                    classifier.fit(X_train_conv, y_train)
+                    classifier.fit(X_train_transformed, y_train)
                     train_time = time.time() - train_start
 
                     valid_start = time.time()
-                    accuracy = classifier.score(X_test_conv, y_test)
+                    accuracy = classifier.score(X_test_transformed, y_test)
                     valid_time = time.time() - valid_start
 
-                    # armazena os resultados do processamento
                     new_result = {
                         "dataset": dataset,
                         "representation": representation,
                         "representation_transform_time": transform_time,
                         "concatenation_type": concat_type,
                         "accuracy": accuracy,
-                        "convolution_algorithm": algo_name,
-                        "convolution_time": conv_time,
+                        "convolution_algorithm": None,
+                        "convolution_time": 0,
                         "classification_algorithm": "Ridge",
                         "train_time": train_time,
                         "validation_time": valid_time
                     }
-                    results.loc[len(results)] = new_result
+                    dataset_results.loc[len(dataset_results)] = new_result
                     
-                    del algorithm, X_train_conv, X_test_conv
-                    classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))  # Reinicia o classificador
+                    classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10)) # Reinicia o classificador
                     gc.collect()
-                
-                del X_train_transformed, X_test_transformed
-                gc.collect()
+
+                    # classificação com convolução (Rocket e MiniRocket)
+                    for conv_algo in [Rocket, MiniRocket]:
+                        algo_name = conv_algo.__name__
+                        conv_start = time.time()
+                        algorithm = conv_algo(n_kernels=10000, n_jobs=-1, random_state=6)
+                        algorithm.fit(X_train_transformed)
+                        X_train_conv = algorithm.transform(X_train_transformed)
+                        X_test_conv = algorithm.transform(X_test_transformed)
+                        conv_time = time.time() - conv_start
+
+                        train_start = time.time()
+                        classifier.fit(X_train_conv, y_train)
+                        train_time = time.time() - train_start
+
+                        valid_start = time.time()
+                        accuracy = classifier.score(X_test_conv, y_test)
+                        valid_time = time.time() - valid_start
+
+                        # armazena os resultados do processamento
+                        new_result = {
+                            "dataset": dataset,
+                            "representation": representation,
+                            "representation_transform_time": transform_time,
+                            "concatenation_type": concat_type,
+                            "accuracy": accuracy,
+                            "convolution_algorithm": algo_name,
+                            "convolution_time": conv_time,
+                            "classification_algorithm": "Ridge",
+                            "train_time": train_time,
+                            "validation_time": valid_time
+                        }
+                        dataset_results.loc[len(dataset_results)] = new_result
+                        
+                        del algorithm, X_train_conv, X_test_conv
+                        classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))  # Reinicia o classificador
+                        gc.collect()
+                    
+                    del X_train_transformed, X_test_transformed
+                    gc.collect()
+
+                except Exception as e:
+                    print(f"Error processing {dataset} with representation {representation} and concatenation type {concat_type}: {e}")
+                    gc.collect()
+                    continue
+
+        file_name = f"benchmark_comparacao_{dataset}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.xlsx"
+        dataset_results.to_excel(file_name, index=False)
+        print(f"Results for dataset {dataset} saved to {file_name}")
 
     except Exception as e:
-        print(f"Error processing dataset {dataset}: {e}")
+        print(f"FATAL Error processing dataset {dataset}: {e}. Skipping this dataset.")
 
-file_name = f"benchmark_comparacao_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.csv"
-results.to_csv(file_name, index=False)
+        gc.collect()
