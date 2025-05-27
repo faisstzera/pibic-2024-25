@@ -10,6 +10,22 @@ from pyts.image import MarkovTransitionField, GramianAngularField, RecurrencePlo
 import time
 import gc
 from datetime import datetime
+import logging
+
+# config do logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(f'time_series_experiment_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'),
+        logging.StreamHandler()  # Mantém a saída no console também
+    ]
+)
+
+def log_print(message):
+    """Função para substituir print() e registrar no log"""
+    print(message)
+    logging.info(message)
 
 # função para normalizar as séries na mesma escalag
 def znorm(x):
@@ -118,8 +134,8 @@ def dimensions_concatenate(data, concatenate_type, representation):
 def load_dataset(dataset_name):
     try:
         started_at = time.time()
-        print(f"Carregando {dataset_name}")
-        print(f"Iniciando em {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        log_print(f"Carregando {dataset_name}")
+        log_print(f"Iniciando em {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
         train_path = f"{DATA_PATH}/{dataset_name}/{dataset_name}_TRAIN.ts"
         test_path = f"{DATA_PATH}/{dataset_name}/{dataset_name}_TEST.ts"
@@ -128,13 +144,13 @@ def load_dataset(dataset_name):
             X_train, y_train = load_from_tsv_file(train_path)
             X_test, y_test = load_from_tsv_file(test_path)
         else:
-            print(f"Não foi possível carregar o dataset {dataset_name} armazenados na máquina local")
-            print(f"Iniciando download do dataset {dataset_name}")
+            log_print(f"Não foi possível carregar o dataset {dataset_name} armazenados na máquina local")
+            log_print(f"Iniciando download do dataset {dataset_name}")
 
             X_train, y_train = load_classification(dataset_name, split="Train")
             X_test, y_test = load_classification(dataset_name, split="Test")
 
-            print("Download finalizado com sucesso")
+            log_print("Download finalizado com sucesso")
 
         return {
             "X_train": X_train,
@@ -143,7 +159,7 @@ def load_dataset(dataset_name):
             "y_test": y_test,
         }
     finally:
-        print(f"Tempo de carregamento: {time.time() - started_at} segundos")
+        log_print(f"Tempo de carregamento: {time.time() - started_at} segundos")
 
 # config inicial
 DATA_PATH = "/home/faisst/pibic/datasets/data"
@@ -154,9 +170,9 @@ concatenate_types = ["pre_transform", "post_transform"]
 classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))
 
 # se quiser rodar para mais datasets, basta incluir ou remover dessa listas
-datasets = ["FingerMovements", "HandMovementDirection", "Handwriting", "NATOPS", "PEMS-SF", "RacketSports"]
+datasets = ["ArticularyWordRecognition", "HandMovementDirection", "Handwriting", "NATOPS", "PEMS-SF", "RacketSports"]
 for dataset in datasets:
-    print(f"Processando dataset {dataset}")
+    log_print(f"Processando dataset {dataset}")
     dataset_start = time.time()
     
     # Initialize a new DataFrame for each dataset
@@ -182,7 +198,7 @@ for dataset in datasets:
         del data
         gc.collect()
 
-        print(f"Dataset {dataset} carregado em {time.time() - dataset_start} segundos")
+        log_print(f"Dataset {dataset} carregado em {time.time() - dataset_start} segundos")
 
         for representation in tqdm(representations, desc=f"Processing reps for {dataset}"):
             for concat_type in concatenate_types:
@@ -259,15 +275,15 @@ for dataset in datasets:
                     gc.collect()
 
                 except Exception as e:
-                    print(f"Error processing {dataset} with representation {representation} and concatenation type {concat_type}: {e}")
+                    log_print(f"Error processing {dataset} with representation {representation} and concatenation type {concat_type}: {e}")
                     gc.collect()
                     continue
 
         file_name = f"benchmark_comparacao_{dataset}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.xlsx"
         dataset_results.to_excel(file_name, index=False)
-        print(f"Results for dataset {dataset} saved to {file_name}")
+        log_print(f"Results for dataset {dataset} saved to {file_name}")
 
     except Exception as e:
-        print(f"FATAL Error processing dataset {dataset}: {e}. Skipping this dataset.")
+        log_print(f"FATAL Error processing dataset {dataset}: {e}. Skipping this dataset.")
 
         gc.collect()
