@@ -14,7 +14,7 @@ import logging
 
 # Definir diretório de cache personalizado para aeon ANTES de importar aeon
 os.environ['AEON_DATA_PATH'] = '/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache'
-os.makedirs('/home/faisst/pibic/aeon_cache', exist_ok=True)
+os.makedirs('/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache', exist_ok=True)
 
 # config do logging
 logging.basicConfig(
