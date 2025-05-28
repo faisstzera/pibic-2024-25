@@ -12,6 +12,10 @@ import gc
 from datetime import datetime
 import logging
 
+# Definir diretório de cache personalizado para aeon ANTES de importar aeon
+os.environ['AEON_DATA_PATH'] = '/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache'
+os.makedirs('/home/faisst/pibic/aeon_cache', exist_ok=True)
+
 # config do logging
 logging.basicConfig(
     level=logging.INFO,
@@ -162,7 +166,7 @@ def load_dataset(dataset_name):
         log_print(f"Tempo de carregamento: {time.time() - started_at} segundos")
 
 # config inicial
-DATA_PATH = "/home/faisst/pibic/datasets/data"
+DATA_PATH = "/home/user/Desktop/AlexandrePibic/pibic-2024-25/datasets/data"
 representations = ['CWT', 'RP', 'MTF', 'GASF', 'GADF', 'FIRTS']
 concatenate_types = ["pre_transform", "post_transform"]
 
