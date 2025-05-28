@@ -1,4 +1,9 @@
 import os
+
+# Definir diretório de cache personalizado para aeon ANTES de importar aeon
+os.environ['AEON_DATA_PATH'] = '/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache'
+os.makedirs('/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache', exist_ok=True)
+
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import RidgeClassifierCV
@@ -12,9 +17,6 @@ import gc
 from datetime import datetime
 import logging
 
-# Definir diretório de cache personalizado para aeon ANTES de importar aeon
-os.environ['AEON_DATA_PATH'] = '/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache'
-os.makedirs('/home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache', exist_ok=True)
 
 # config do logging
 logging.basicConfig(
