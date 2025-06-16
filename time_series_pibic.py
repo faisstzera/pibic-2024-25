@@ -37,20 +37,6 @@ def log_print(message):
 def znorm(x):
     return (x - np.mean(x)) / np.std(x)
 
-# função para redução de dimensionalidade usando PAA
-def PAA(s, w):
-    s = np.array(s, copy=False)
-    n = len(s)
-    res = np.zeros(w)
-    
-    # modifiquei a lógica para utilizar o slicing do numpy
-    for i in range(w):
-        start_idx = i * n // w
-        end_idx = (i + 1) * n // w
-        res[i] = np.mean(s[start_idx:end_idx])
-    
-    return res
-
 # função que transforma uma série de entrada em uma imagem em 2D.
 def transform_series(series, representation):
     # utiliza uma cópia da série para reduzir o uso de memória
@@ -100,13 +86,6 @@ def transform_series(series, representation):
         del mtf, gaf, rp, gaf_result, rp_result
         return mtf_result
 
-# função para aplicar PAA em séries com muitas dimensões antes do processamento
-def apply_dimension_reduction(series):
-    # verificar se a série tem mais de 30 dimensões
-    if len(series) > 30:
-        return PAA(series, 30)
-    return series
-
 # função para concatenar dimensões das séries temporais com pre transform ou post transform
 def dimensions_concatenate(data, concatenate_type, representation):
     new_data = []
@@ -114,7 +93,7 @@ def dimensions_concatenate(data, concatenate_type, representation):
     for x in data:
         if concatenate_type == "pre_transform":
             # aplica redução de dimensionalidade em cada série antes da concatenação
-            reduced_series = [apply_dimension_reduction(series) for series in x]
+            reduced_series =  [series[:20] for series in x]
             concatenated_series = np.concatenate(reduced_series, axis=0)
             image = transform_series(concatenated_series, representation)
             new_data.append(image.flatten())
@@ -124,7 +103,7 @@ def dimensions_concatenate(data, concatenate_type, representation):
             
         elif concatenate_type == "post_transform":
             # aplicar redução de dimensionalidade em cada série antes da transformação
-            reduced_series = [apply_dimension_reduction(series) for series in x]
+            reduced_series =  [series[:20] for series in x]
             transformed_images = [transform_series(series, representation) for series in reduced_series]
             concatenated_image = np.concatenate(transformed_images, axis=0)
             new_data.append(concatenated_image.flatten())
