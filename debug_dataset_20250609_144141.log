@@ -1,0 +1,3 @@
+2025-06-09 14:41:41,740 - INFO - === Debug do dataset CharacterTrajectories ===
+2025-06-09 14:41:41,740 - INFO - Tentando download...
+2025-06-09 14:41:41,749 - INFO - Erro no download: channel 1 in case 159 has a different number of observations to the other channels. Saw 88 in the first channel but 99 in the channel 1. The meta data specifies equal length == False. But even if series length are unequal, all channels for a single case must be the same length

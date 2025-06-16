@@ -1,0 +1,44 @@
+2025-06-05 11:23:39,121 - INFO - Processando dataset FingerMovements
+2025-06-05 11:23:39,122 - INFO - Carregando FingerMovements
+2025-06-05 11:23:39,122 - INFO - Iniciando em 2025-06-05 11:23:39
+2025-06-05 11:23:39,122 - INFO - Não foi possível carregar o dataset FingerMovements armazenados na máquina local
+2025-06-05 11:23:39,122 - INFO - Iniciando download do dataset FingerMovements
+2025-06-05 11:23:42,511 - INFO - Download finalizado com sucesso
+2025-06-05 11:23:42,511 - INFO - Tempo de carregamento: 3.389047145843506 segundos
+2025-06-05 11:23:42,578 - INFO - Dataset FingerMovements carregado em 3.456758975982666 segundos
+2025-06-05 14:02:51,271 - INFO - Results for dataset FingerMovements saved to benchmark_comparacao_FingerMovements_2025-06-05_14-02-51.xlsx
+2025-06-05 14:02:51,271 - INFO - Processando dataset HandMovementDirection
+2025-06-05 14:02:51,272 - INFO - Carregando HandMovementDirection
+2025-06-05 14:02:51,272 - INFO - Iniciando em 2025-06-05 14:02:51
+2025-06-05 14:02:51,272 - INFO - Não foi possível carregar o dataset HandMovementDirection armazenados na máquina local
+2025-06-05 14:02:51,272 - INFO - Iniciando download do dataset HandMovementDirection
+2025-06-05 14:02:58,731 - INFO - Download finalizado com sucesso
+2025-06-05 14:02:58,731 - INFO - Tempo de carregamento: 7.458843469619751 segundos
+2025-06-05 14:02:58,823 - INFO - Dataset HandMovementDirection carregado em 7.551460266113281 segundos
+2025-06-05 14:12:27,495 - INFO - Results for dataset HandMovementDirection saved to benchmark_comparacao_HandMovementDirection_2025-06-05_14-12-27.xlsx
+2025-06-05 14:12:27,495 - INFO - Processando dataset Handwriting
+2025-06-05 14:12:27,496 - INFO - Carregando Handwriting
+2025-06-05 14:12:27,496 - INFO - Iniciando em 2025-06-05 14:12:27
+2025-06-05 14:12:27,496 - INFO - Não foi possível carregar o dataset Handwriting armazenados na máquina local
+2025-06-05 14:12:27,496 - INFO - Iniciando download do dataset Handwriting
+2025-06-05 14:12:31,098 - INFO - Download finalizado com sucesso
+2025-06-05 14:12:31,098 - INFO - Tempo de carregamento: 3.6021316051483154 segundos
+2025-06-05 14:12:31,184 - INFO - Dataset Handwriting carregado em 3.688492774963379 segundos
+2025-06-05 14:16:36,560 - INFO - Results for dataset Handwriting saved to benchmark_comparacao_Handwriting_2025-06-05_14-16-36.xlsx
+2025-06-05 14:16:36,560 - INFO - Processando dataset Heartbeat
+2025-06-05 14:16:36,561 - INFO - Carregando Heartbeat
+2025-06-05 14:16:36,561 - INFO - Iniciando em 2025-06-05 14:16:36
+2025-06-05 14:16:36,561 - INFO - Não foi possível carregar o dataset Heartbeat armazenados na máquina local
+2025-06-05 14:16:36,561 - INFO - Iniciando download do dataset Heartbeat
+2025-06-05 14:16:43,751 - INFO - Download finalizado com sucesso
+2025-06-05 14:16:43,751 - INFO - Tempo de carregamento: 7.190319538116455 segundos
+2025-06-05 14:16:43,842 - INFO - Dataset Heartbeat carregado em 7.281101226806641 segundos
+2025-06-06 04:50:34,327 - INFO - Results for dataset Heartbeat saved to benchmark_comparacao_Heartbeat_2025-06-06_04-50-34.xlsx
+2025-06-06 04:50:34,327 - INFO - Processando dataset InsectWingbeat
+2025-06-06 04:50:34,327 - INFO - Carregando InsectWingbeat
+2025-06-06 04:50:34,327 - INFO - Iniciando em 2025-06-06 04:50:34
+2025-06-06 04:50:34,327 - INFO - Não foi possível carregar o dataset InsectWingbeat armazenados na máquina local
+2025-06-06 04:50:34,327 - INFO - Iniciando download do dataset InsectWingbeat
+2025-06-06 04:51:02,212 - INFO - Download finalizado com sucesso
+2025-06-06 04:51:02,212 - INFO - Tempo de carregamento: 27.884791374206543 segundos
+2025-06-06 04:51:02,311 - INFO - Dataset InsectWingbeat carregado em 27.984636783599854 segundos

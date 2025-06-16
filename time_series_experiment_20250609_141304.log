@@ -1,0 +1,8 @@
+2025-06-09 14:13:04,365 - INFO - Processando dataset JapaneseVowels
+2025-06-09 14:13:04,366 - INFO - Carregando JapaneseVowels
+2025-06-09 14:13:04,366 - INFO - Iniciando em 2025-06-09 14:13:04
+2025-06-09 14:13:04,366 - INFO - Não foi possível carregar o dataset JapaneseVowels armazenados na máquina local
+2025-06-09 14:13:04,366 - INFO - Iniciando download do dataset JapaneseVowels
+2025-06-09 14:13:04,398 - INFO - Download finalizado com sucesso
+2025-06-09 14:13:04,398 - INFO - Tempo de carregamento: 0.032201528549194336 segundos
+2025-06-09 14:13:04,473 - INFO - Dataset JapaneseVowels carregado em 0.10793352127075195 segundos

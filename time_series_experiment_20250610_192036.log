@@ -1,0 +1,80 @@
+2025-06-10 19:20:36,875 - INFO - Processando dataset CharacterTrajectories
+2025-06-10 19:20:36,875 - INFO - Carregando CharacterTrajectories
+2025-06-10 19:20:36,875 - INFO - Iniciando em 2025-06-10 19:20:36
+2025-06-10 19:20:36,875 - INFO - Não foi possível carregar o dataset CharacterTrajectories armazenados na máquina local
+2025-06-10 19:20:36,875 - INFO - Iniciando download do dataset CharacterTrajectories
+2025-06-10 19:20:37,001 - INFO - Download finalizado com sucesso
+2025-06-10 19:20:37,001 - INFO - Tempo de carregamento: 0.1260364055633545 segundos
+2025-06-10 19:20:37,046 - INFO - Dataset CharacterTrajectories carregado em 0.17104554176330566 segundos
+2025-06-10 19:36:12,517 - INFO - Results for dataset CharacterTrajectories saved to benchmark_comparacao_CharacterTrajectories_2025-06-10_19-36-12.xlsx
+2025-06-10 19:36:12,518 - INFO - Processando dataset PenDigits
+2025-06-10 19:36:12,518 - INFO - Carregando PenDigits
+2025-06-10 19:36:12,518 - INFO - Iniciando em 2025-06-10 19:36:12
+2025-06-10 19:36:12,518 - INFO - Não foi possível carregar o dataset PenDigits armazenados na máquina local
+2025-06-10 19:36:12,518 - INFO - Iniciando download do dataset PenDigits
+2025-06-10 19:36:15,386 - INFO - Download finalizado com sucesso
+2025-06-10 19:36:15,386 - INFO - Tempo de carregamento: 2.8682022094726562 segundos
+2025-06-10 19:36:15,442 - INFO - Dataset PenDigits carregado em 2.923983573913574 segundos
+2025-06-10 20:14:25,333 - INFO - Results for dataset PenDigits saved to benchmark_comparacao_PenDigits_2025-06-10_20-14-25.xlsx
+2025-06-10 20:14:25,333 - INFO - Processando dataset Phoneme
+2025-06-10 20:14:25,333 - INFO - Carregando Phoneme
+2025-06-10 20:14:25,333 - INFO - Iniciando em 2025-06-10 20:14:25
+2025-06-10 20:14:25,333 - INFO - Não foi possível carregar o dataset Phoneme armazenados na máquina local
+2025-06-10 20:14:25,333 - INFO - Iniciando download do dataset Phoneme
+2025-06-10 20:14:30,670 - INFO - Download finalizado com sucesso
+2025-06-10 20:14:30,670 - INFO - Tempo de carregamento: 5.336625576019287 segundos
+2025-06-10 20:14:30,721 - INFO - Dataset Phoneme carregado em 5.388461112976074 segundos
+2025-06-10 20:16:23,276 - INFO - Results for dataset Phoneme saved to benchmark_comparacao_Phoneme_2025-06-10_20-16-23.xlsx
+2025-06-10 20:16:23,276 - INFO - Processando dataset RacketSports
+2025-06-10 20:16:23,276 - INFO - Carregando RacketSports
+2025-06-10 20:16:23,277 - INFO - Iniciando em 2025-06-10 20:16:23
+2025-06-10 20:16:23,277 - INFO - Não foi possível carregar o dataset RacketSports armazenados na máquina local
+2025-06-10 20:16:23,277 - INFO - Iniciando download do dataset RacketSports
+2025-06-10 20:16:25,681 - INFO - Download finalizado com sucesso
+2025-06-10 20:16:25,681 - INFO - Tempo de carregamento: 2.4046525955200195 segundos
+2025-06-10 20:16:25,749 - INFO - Dataset RacketSports carregado em 2.4726524353027344 segundos
+2025-06-10 20:20:55,403 - INFO - Results for dataset RacketSports saved to benchmark_comparacao_RacketSports_2025-06-10_20-20-55.xlsx
+2025-06-10 20:20:55,403 - INFO - Processando dataset SelfRegulationSCP1
+2025-06-10 20:20:55,404 - INFO - Carregando SelfRegulationSCP1
+2025-06-10 20:20:55,404 - INFO - Iniciando em 2025-06-10 20:20:55
+2025-06-10 20:20:55,404 - INFO - Não foi possível carregar o dataset SelfRegulationSCP1 armazenados na máquina local
+2025-06-10 20:20:55,404 - INFO - Iniciando download do dataset SelfRegulationSCP1
+2025-06-10 20:20:59,269 - INFO - Download finalizado com sucesso
+2025-06-10 20:20:59,269 - INFO - Tempo de carregamento: 3.8653104305267334 segundos
+2025-06-10 20:20:59,323 - INFO - Dataset SelfRegulationSCP1 carregado em 3.9199154376983643 segundos
+2025-06-10 20:29:24,640 - INFO - Results for dataset SelfRegulationSCP1 saved to benchmark_comparacao_SelfRegulationSCP1_2025-06-10_20-29-24.xlsx
+2025-06-10 20:29:24,640 - INFO - Processando dataset SelfRegulationSCP2
+2025-06-10 20:29:24,640 - INFO - Carregando SelfRegulationSCP2
+2025-06-10 20:29:24,640 - INFO - Iniciando em 2025-06-10 20:29:24
+2025-06-10 20:29:24,640 - INFO - Não foi possível carregar o dataset SelfRegulationSCP2 armazenados na máquina local
+2025-06-10 20:29:24,640 - INFO - Iniciando download do dataset SelfRegulationSCP2
+2025-06-10 20:29:28,550 - INFO - Download finalizado com sucesso
+2025-06-10 20:29:28,550 - INFO - Tempo de carregamento: 3.9099361896514893 segundos
+2025-06-10 20:29:28,606 - INFO - Dataset SelfRegulationSCP2 carregado em 3.965914249420166 segundos
+2025-06-10 20:37:04,482 - INFO - Results for dataset SelfRegulationSCP2 saved to benchmark_comparacao_SelfRegulationSCP2_2025-06-10_20-37-04.xlsx
+2025-06-10 20:37:04,482 - INFO - Processando dataset SpokenArabicDigits
+2025-06-10 20:37:04,482 - INFO - Carregando SpokenArabicDigits
+2025-06-10 20:37:04,482 - INFO - Iniciando em 2025-06-10 20:37:04
+2025-06-10 20:37:04,482 - INFO - Não foi possível carregar o dataset SpokenArabicDigits armazenados na máquina local
+2025-06-10 20:37:04,482 - INFO - Iniciando download do dataset SpokenArabicDigits
+2025-06-10 20:37:13,975 - INFO - Download finalizado com sucesso
+2025-06-10 20:37:13,975 - INFO - Tempo de carregamento: 9.492465019226074 segundos
+2025-06-10 20:37:14,027 - INFO - Dataset SpokenArabicDigits carregado em 9.545403718948364 segundos
+2025-06-11 06:33:14,502 - INFO - Results for dataset SpokenArabicDigits saved to benchmark_comparacao_SpokenArabicDigits_2025-06-11_06-33-14.xlsx
+2025-06-11 06:33:14,502 - INFO - Processando dataset StandWalkJump
+2025-06-11 06:33:14,502 - INFO - Carregando StandWalkJump
+2025-06-11 06:33:14,503 - INFO - Iniciando em 2025-06-11 06:33:14
+2025-06-11 06:33:14,503 - INFO - Não foi possível carregar o dataset StandWalkJump armazenados na máquina local
+2025-06-11 06:33:14,503 - INFO - Iniciando download do dataset StandWalkJump
+2025-06-11 06:33:17,522 - INFO - Download finalizado com sucesso
+2025-06-11 06:33:17,522 - INFO - Tempo de carregamento: 3.019874334335327 segundos
+2025-06-11 06:33:17,582 - INFO - Dataset StandWalkJump carregado em 3.0802698135375977 segundos
+2025-06-11 06:33:46,247 - INFO - Results for dataset StandWalkJump saved to benchmark_comparacao_StandWalkJump_2025-06-11_06-33-46.xlsx
+2025-06-11 06:33:46,247 - INFO - Processando dataset InsectWingbeat
+2025-06-11 06:33:46,248 - INFO - Carregando InsectWingbeat
+2025-06-11 06:33:46,248 - INFO - Iniciando em 2025-06-11 06:33:46
+2025-06-11 06:33:46,248 - INFO - Não foi possível carregar o dataset InsectWingbeat armazenados na máquina local
+2025-06-11 06:33:46,248 - INFO - Iniciando download do dataset InsectWingbeat
+2025-06-11 06:34:53,340 - INFO - Download finalizado com sucesso
+2025-06-11 06:34:53,340 - INFO - Tempo de carregamento: 67.09228539466858 segundos
+2025-06-11 06:34:53,404 - INFO - Dataset InsectWingbeat carregado em 67.15628170967102 segundos

@@ -1,0 +1,11 @@
+2025-06-09 14:38:43,988 - INFO - === Iniciando debug completo do dataset ===
+2025-06-09 14:38:43,988 - INFO - Cache path: /home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache
+2025-06-09 14:38:43,988 - INFO - === Forçando download de CharacterTrajectories ===
+2025-06-09 14:38:43,988 - INFO - Iniciando download...
+2025-06-09 14:38:43,997 - INFO - Erro durante download/inspeção: channel 1 in case 159 has a different number of observations to the other channels. Saw 88 in the first channel but 99 in the channel 1. The meta data specifies equal length == False. But even if series length are unequal, all channels for a single case must be the same length
+2025-06-09 14:38:43,997 - INFO - Tipo do erro: OSError
+2025-06-09 14:38:43,997 - INFO - 
+=== Tentando métodos alternativos ===
+2025-06-09 14:38:43,997 - INFO - Método alternativo falhou: cannot import name '_download_and_load' from 'aeon.datasets._data_loaders' (/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/_data_loaders.py)
+2025-06-09 14:38:43,997 - INFO - 
+=== Debug finalizado ===

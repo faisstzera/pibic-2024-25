@@ -1,0 +1,75 @@
+2025-05-28 08:19:09,219 - INFO - Processando dataset ArticularyWordRecognition
+2025-05-28 08:19:09,220 - INFO - Carregando ArticularyWordRecognition
+2025-05-28 08:19:09,220 - INFO - Iniciando em 2025-05-28 08:19:09
+2025-05-28 08:19:09,220 - INFO - Não foi possível carregar o dataset ArticularyWordRecognition armazenados na máquina local
+2025-05-28 08:19:09,220 - INFO - Iniciando download do dataset ArticularyWordRecognition
+2025-05-28 08:19:12,780 - INFO - Tempo de carregamento: 3.56036376953125 segundos
+2025-05-28 08:19:12,780 - INFO - FATAL Error processing dataset ArticularyWordRecognition: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/ArticularyWordRecognition/'. Skipping this dataset.
+2025-05-28 08:19:12,855 - INFO - Processando dataset CharacterTrajectories
+2025-05-28 08:19:12,856 - INFO - Carregando CharacterTrajectories
+2025-05-28 08:19:12,856 - INFO - Iniciando em 2025-05-28 08:19:12
+2025-05-28 08:19:12,856 - INFO - Não foi possível carregar o dataset CharacterTrajectories armazenados na máquina local
+2025-05-28 08:19:12,856 - INFO - Iniciando download do dataset CharacterTrajectories
+2025-05-28 08:19:12,865 - INFO - Tempo de carregamento: 0.00871419906616211 segundos
+2025-05-28 08:19:12,865 - INFO - FATAL Error processing dataset CharacterTrajectories: channel 1 in case 159 has a different number of observations to the other channels. Saw 88 in the first channel but 99 in the channel 1. The meta data specifies equal length == False. But even if series length are unequal, all channels for a single case must be the same length. Skipping this dataset.
+2025-05-28 08:19:12,941 - INFO - Processando dataset Cricket
+2025-05-28 08:19:12,941 - INFO - Carregando Cricket
+2025-05-28 08:19:12,941 - INFO - Iniciando em 2025-05-28 08:19:12
+2025-05-28 08:19:12,941 - INFO - Não foi possível carregar o dataset Cricket armazenados na máquina local
+2025-05-28 08:19:12,941 - INFO - Iniciando download do dataset Cricket
+2025-05-28 08:19:16,137 - INFO - Tempo de carregamento: 3.195310354232788 segundos
+2025-05-28 08:19:16,137 - INFO - FATAL Error processing dataset Cricket: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/Cricket/'. Skipping this dataset.
+2025-05-28 08:19:16,219 - INFO - Processando dataset DuckDuckGeese
+2025-05-28 08:19:16,220 - INFO - Carregando DuckDuckGeese
+2025-05-28 08:19:16,220 - INFO - Iniciando em 2025-05-28 08:19:16
+2025-05-28 08:19:16,220 - INFO - Não foi possível carregar o dataset DuckDuckGeese armazenados na máquina local
+2025-05-28 08:19:16,220 - INFO - Iniciando download do dataset DuckDuckGeese
+2025-05-28 08:19:24,622 - INFO - Tempo de carregamento: 8.401969909667969 segundos
+2025-05-28 08:19:24,622 - INFO - FATAL Error processing dataset DuckDuckGeese: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/DuckDuckGeese/'. Skipping this dataset.
+2025-05-28 08:19:24,687 - INFO - Processando dataset EigenWorms
+2025-05-28 08:19:24,688 - INFO - Carregando EigenWorms
+2025-05-28 08:19:24,688 - INFO - Iniciando em 2025-05-28 08:19:24
+2025-05-28 08:19:24,688 - INFO - Não foi possível carregar o dataset EigenWorms armazenados na máquina local
+2025-05-28 08:19:24,688 - INFO - Iniciando download do dataset EigenWorms
+2025-05-28 08:19:44,852 - INFO - Tempo de carregamento: 20.163804531097412 segundos
+2025-05-28 08:19:44,852 - INFO - FATAL Error processing dataset EigenWorms: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/EigenWorms/'. Skipping this dataset.
+2025-05-28 08:19:44,931 - INFO - Processando dataset FaceDetection
+2025-05-28 08:19:44,931 - INFO - Carregando FaceDetection
+2025-05-28 08:19:44,932 - INFO - Iniciando em 2025-05-28 08:19:44
+2025-05-28 08:19:44,932 - INFO - Não foi possível carregar o dataset FaceDetection armazenados na máquina local
+2025-05-28 08:19:44,932 - INFO - Iniciando download do dataset FaceDetection
+2025-05-28 08:20:19,043 - INFO - Tempo de carregamento: 34.111661195755005 segundos
+2025-05-28 08:20:19,043 - INFO - FATAL Error processing dataset FaceDetection: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/FaceDetection/'. Skipping this dataset.
+2025-05-28 08:20:19,118 - INFO - Processando dataset FingerMovements
+2025-05-28 08:20:19,118 - INFO - Carregando FingerMovements
+2025-05-28 08:20:19,118 - INFO - Iniciando em 2025-05-28 08:20:19
+2025-05-28 08:20:19,118 - INFO - Não foi possível carregar o dataset FingerMovements armazenados na máquina local
+2025-05-28 08:20:19,118 - INFO - Iniciando download do dataset FingerMovements
+2025-05-28 08:20:21,842 - INFO - Tempo de carregamento: 2.7239725589752197 segundos
+2025-05-28 08:20:21,842 - INFO - FATAL Error processing dataset FingerMovements: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/FingerMovements/'. Skipping this dataset.
+2025-05-28 08:20:21,912 - INFO - Processando dataset HandMovementDirection
+2025-05-28 08:20:21,912 - INFO - Carregando HandMovementDirection
+2025-05-28 08:20:21,912 - INFO - Iniciando em 2025-05-28 08:20:21
+2025-05-28 08:20:21,913 - INFO - Não foi possível carregar o dataset HandMovementDirection armazenados na máquina local
+2025-05-28 08:20:21,913 - INFO - Iniciando download do dataset HandMovementDirection
+2025-05-28 08:20:25,324 - INFO - Tempo de carregamento: 3.41127347946167 segundos
+2025-05-28 08:20:25,324 - INFO - FATAL Error processing dataset HandMovementDirection: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/HandMovementDirection/'. Skipping this dataset.
+2025-05-28 08:20:25,406 - INFO - Processando dataset Handwriting
+2025-05-28 08:20:25,406 - INFO - Carregando Handwriting
+2025-05-28 08:20:25,406 - INFO - Iniciando em 2025-05-28 08:20:25
+2025-05-28 08:20:25,406 - INFO - Não foi possível carregar o dataset Handwriting armazenados na máquina local
+2025-05-28 08:20:25,406 - INFO - Iniciando download do dataset Handwriting
+2025-05-28 08:20:28,184 - INFO - Tempo de carregamento: 2.7774696350097656 segundos
+2025-05-28 08:20:28,186 - INFO - FATAL Error processing dataset Handwriting: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/Handwriting/'. Skipping this dataset.
+2025-05-28 08:20:28,260 - INFO - Processando dataset Heartbeat
+2025-05-28 08:20:28,261 - INFO - Carregando Heartbeat
+2025-05-28 08:20:28,261 - INFO - Iniciando em 2025-05-28 08:20:28
+2025-05-28 08:20:28,261 - INFO - Não foi possível carregar o dataset Heartbeat armazenados na máquina local
+2025-05-28 08:20:28,261 - INFO - Iniciando download do dataset Heartbeat
+2025-05-28 08:20:33,581 - INFO - Tempo de carregamento: 5.320160627365112 segundos
+2025-05-28 08:20:33,581 - INFO - FATAL Error processing dataset Heartbeat: [Errno 13] Permission denied: '/home/user/miniconda3/lib/python3.12/site-packages/aeon/datasets/local_data/Heartbeat/'. Skipping this dataset.
+2025-05-28 08:20:33,664 - INFO - Processando dataset InsectWingbeat
+2025-05-28 08:20:33,665 - INFO - Carregando InsectWingbeat
+2025-05-28 08:20:33,665 - INFO - Iniciando em 2025-05-28 08:20:33
+2025-05-28 08:20:33,665 - INFO - Não foi possível carregar o dataset InsectWingbeat armazenados na máquina local
+2025-05-28 08:20:33,665 - INFO - Iniciando download do dataset InsectWingbeat

@@ -1,0 +1,8 @@
+2025-05-26 21:33:18,036 - INFO - Processando dataset ArticularyWordRecognition
+2025-05-26 21:33:18,037 - INFO - Carregando ArticularyWordRecognition
+2025-05-26 21:33:18,037 - INFO - Iniciando em 2025-05-26 21:33:18
+2025-05-26 21:33:18,037 - INFO - Não foi possível carregar o dataset ArticularyWordRecognition armazenados na máquina local
+2025-05-26 21:33:18,037 - INFO - Iniciando download do dataset ArticularyWordRecognition
+2025-05-26 21:33:18,129 - INFO - Download finalizado com sucesso
+2025-05-26 21:33:18,129 - INFO - Tempo de carregamento: 0.09184718132019043 segundos
+2025-05-26 21:33:18,172 - INFO - Dataset ArticularyWordRecognition carregado em 0.1363077163696289 segundos

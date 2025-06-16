@@ -1,0 +1,6 @@
+2025-06-09 14:26:24,804 - INFO - Processando dataset CharacterTrajectories
+2025-06-09 14:26:24,804 - INFO - Carregando CharacterTrajectories
+2025-06-09 14:26:24,804 - INFO - Iniciando em 2025-06-09 14:26:24
+2025-06-09 14:26:24,804 - INFO - Não foi possível carregar o dataset CharacterTrajectories armazenados na máquina local
+2025-06-09 14:26:24,804 - INFO - Iniciando download do dataset CharacterTrajectories
+2025-06-09 14:26:24,812 - INFO - Tempo de carregamento: 0.007793426513671875 segundos

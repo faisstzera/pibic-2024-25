@@ -1,0 +1,8 @@
+2025-06-13 07:39:10,303 - INFO - Processando dataset DuckDuckGeese
+2025-06-13 07:39:10,305 - INFO - Carregando DuckDuckGeese
+2025-06-13 07:39:10,305 - INFO - Iniciando em 2025-06-13 07:39:10
+2025-06-13 07:39:10,305 - INFO - Não foi possível carregar o dataset DuckDuckGeese armazenados na máquina local
+2025-06-13 07:39:10,305 - INFO - Iniciando download do dataset DuckDuckGeese
+2025-06-13 07:39:23,632 - INFO - Download finalizado com sucesso
+2025-06-13 07:39:23,632 - INFO - Tempo de carregamento: 13.327688455581665 segundos
+2025-06-13 07:39:23,671 - INFO - Dataset DuckDuckGeese carregado em 13.368374586105347 segundos

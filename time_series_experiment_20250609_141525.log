@@ -1,0 +1,15 @@
+2025-06-09 14:15:25,674 - INFO - Processando dataset CharacterTrajectories
+2025-06-09 14:15:25,674 - INFO - Carregando CharacterTrajectories
+2025-06-09 14:15:25,674 - INFO - Iniciando em 2025-06-09 14:15:25
+2025-06-09 14:15:25,674 - INFO - Não foi possível carregar o dataset CharacterTrajectories armazenados na máquina local
+2025-06-09 14:15:25,675 - INFO - Iniciando download do dataset CharacterTrajectories
+2025-06-09 14:15:25,687 - INFO - Tempo de carregamento: 0.01222538948059082 segundos
+2025-06-09 14:15:25,687 - INFO - FATAL Error processing dataset CharacterTrajectories: channel 1 in case 159 has a different number of observations to the other channels. Saw 88 in the first channel but 99 in the channel 1. The meta data specifies equal length == False. But even if series length are unequal, all channels for a single case must be the same length. Skipping this dataset.
+2025-06-09 14:15:25,753 - INFO - Processando dataset InsectWingbeat
+2025-06-09 14:15:25,754 - INFO - Carregando InsectWingbeat
+2025-06-09 14:15:25,754 - INFO - Iniciando em 2025-06-09 14:15:25
+2025-06-09 14:15:25,754 - INFO - Não foi possível carregar o dataset InsectWingbeat armazenados na máquina local
+2025-06-09 14:15:25,754 - INFO - Iniciando download do dataset InsectWingbeat
+2025-06-09 14:15:53,482 - INFO - Download finalizado com sucesso
+2025-06-09 14:15:53,482 - INFO - Tempo de carregamento: 27.728054523468018 segundos
+2025-06-09 14:15:53,549 - INFO - Dataset InsectWingbeat carregado em 27.796093702316284 segundos

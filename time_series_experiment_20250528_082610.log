@@ -1,0 +1,33 @@
+2025-05-28 08:26:10,670 - INFO - Processando dataset ArticularyWordRecognition
+2025-05-28 08:26:10,671 - INFO - Carregando ArticularyWordRecognition
+2025-05-28 08:26:10,671 - INFO - Iniciando em 2025-05-28 08:26:10
+2025-05-28 08:26:10,671 - INFO - Não foi possível carregar o dataset ArticularyWordRecognition armazenados na máquina local
+2025-05-28 08:26:10,671 - INFO - Iniciando download do dataset ArticularyWordRecognition
+2025-05-28 08:26:13,979 - INFO - Download finalizado com sucesso
+2025-05-28 08:26:13,979 - INFO - Tempo de carregamento: 3.308134078979492 segundos
+2025-05-28 08:26:14,054 - INFO - Dataset ArticularyWordRecognition carregado em 3.3836679458618164 segundos
+2025-05-28 08:44:05,452 - INFO - FATAL Error processing dataset ArticularyWordRecognition: No module named 'openpyxl'. Skipping this dataset.
+2025-05-28 08:44:05,548 - INFO - Processando dataset CharacterTrajectories
+2025-05-28 08:44:05,549 - INFO - Carregando CharacterTrajectories
+2025-05-28 08:44:05,549 - INFO - Iniciando em 2025-05-28 08:44:05
+2025-05-28 08:44:05,549 - INFO - Não foi possível carregar o dataset CharacterTrajectories armazenados na máquina local
+2025-05-28 08:44:05,549 - INFO - Iniciando download do dataset CharacterTrajectories
+2025-05-28 08:44:05,558 - INFO - Tempo de carregamento: 0.00837397575378418 segundos
+2025-05-28 08:44:05,558 - INFO - FATAL Error processing dataset CharacterTrajectories: channel 1 in case 159 has a different number of observations to the other channels. Saw 88 in the first channel but 99 in the channel 1. The meta data specifies equal length == False. But even if series length are unequal, all channels for a single case must be the same length. Skipping this dataset.
+2025-05-28 08:44:05,640 - INFO - Processando dataset Cricket
+2025-05-28 08:44:05,640 - INFO - Carregando Cricket
+2025-05-28 08:44:05,640 - INFO - Iniciando em 2025-05-28 08:44:05
+2025-05-28 08:44:05,640 - INFO - Não foi possível carregar o dataset Cricket armazenados na máquina local
+2025-05-28 08:44:05,641 - INFO - Iniciando download do dataset Cricket
+2025-05-28 08:44:09,760 - INFO - Download finalizado com sucesso
+2025-05-28 08:44:09,760 - INFO - Tempo de carregamento: 4.119482517242432 segundos
+2025-05-28 08:44:09,850 - INFO - Dataset Cricket carregado em 4.210259199142456 segundos
+2025-05-28 08:47:15,041 - INFO - FATAL Error processing dataset Cricket: No module named 'openpyxl'. Skipping this dataset.
+2025-05-28 08:47:15,116 - INFO - Processando dataset DuckDuckGeese
+2025-05-28 08:47:15,117 - INFO - Carregando DuckDuckGeese
+2025-05-28 08:47:15,117 - INFO - Iniciando em 2025-05-28 08:47:15
+2025-05-28 08:47:15,117 - INFO - Não foi possível carregar o dataset DuckDuckGeese armazenados na máquina local
+2025-05-28 08:47:15,117 - INFO - Iniciando download do dataset DuckDuckGeese
+2025-05-28 08:47:28,088 - INFO - Download finalizado com sucesso
+2025-05-28 08:47:28,088 - INFO - Tempo de carregamento: 12.971368074417114 segundos
+2025-05-28 08:47:28,181 - INFO - Dataset DuckDuckGeese carregado em 13.06514859199524 segundos

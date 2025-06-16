@@ -1,0 +1,17 @@
+2025-06-09 15:04:40,672 - INFO - Processando dataset CharacterTrajectories
+2025-06-09 15:04:40,674 - INFO - Carregando CharacterTrajectories
+2025-06-09 15:04:40,674 - INFO - Iniciando em 2025-06-09 15:04:40
+2025-06-09 15:04:40,674 - INFO - Não foi possível carregar o dataset CharacterTrajectories armazenados na máquina local
+2025-06-09 15:04:40,674 - INFO - Iniciando download do dataset CharacterTrajectories
+2025-06-09 15:04:40,801 - INFO - Download finalizado com sucesso
+2025-06-09 15:04:40,802 - INFO - Tempo de carregamento: 0.12722373008728027 segundos
+2025-06-09 15:04:40,845 - INFO - Dataset CharacterTrajectories carregado em 0.17252612113952637 segundos
+2025-06-09 15:19:41,458 - INFO - FATAL Error processing dataset CharacterTrajectories: No module named 'openpyxl'. Skipping this dataset.
+2025-06-09 15:19:41,513 - INFO - Processando dataset PEMS-SF
+2025-06-09 15:19:41,514 - INFO - Carregando PEMS-SF
+2025-06-09 15:19:41,514 - INFO - Iniciando em 2025-06-09 15:19:41
+2025-06-09 15:19:41,514 - INFO - Não foi possível carregar o dataset PEMS-SF armazenados na máquina local
+2025-06-09 15:19:41,514 - INFO - Iniciando download do dataset PEMS-SF
+2025-06-09 15:20:04,788 - INFO - Download finalizado com sucesso
+2025-06-09 15:20:04,788 - INFO - Tempo de carregamento: 23.274607181549072 segundos
+2025-06-09 15:20:04,845 - INFO - Dataset PEMS-SF carregado em 23.33218264579773 segundos

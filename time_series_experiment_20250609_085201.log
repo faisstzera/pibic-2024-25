@@ -1,0 +1,24 @@
+2025-06-09 08:52:01,152 - INFO - Processando dataset LSST
+2025-06-09 08:52:01,153 - INFO - Carregando LSST
+2025-06-09 08:52:01,153 - INFO - Iniciando em 2025-06-09 08:52:01
+2025-06-09 08:52:01,153 - INFO - Não foi possível carregar o dataset LSST armazenados na máquina local
+2025-06-09 08:52:01,153 - INFO - Iniciando download do dataset LSST
+2025-06-09 08:52:05,338 - INFO - Download finalizado com sucesso
+2025-06-09 08:52:05,338 - INFO - Tempo de carregamento: 4.184916019439697 segundos
+2025-06-09 08:52:05,418 - INFO - Dataset LSST carregado em 4.265913009643555 segundos
+2025-06-09 09:02:58,878 - INFO - Error processing LSST with representation CWT and concatenation type post_transform: Input X contains NaN.
+RidgeClassifierCV does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-06-09 09:12:48,049 - INFO - Error processing LSST with representation RP and concatenation type post_transform: Input contains NaN.
+2025-06-09 09:22:39,994 - INFO - Error processing LSST with representation MTF and concatenation type post_transform: Input contains NaN.
+2025-06-09 09:32:26,654 - INFO - Error processing LSST with representation GASF and concatenation type post_transform: Input contains NaN.
+2025-06-09 09:42:24,225 - INFO - Error processing LSST with representation GADF and concatenation type post_transform: Input contains NaN.
+2025-06-09 09:52:13,439 - INFO - Error processing LSST with representation FIRTS and concatenation type post_transform: Input contains NaN.
+2025-06-09 09:52:13,617 - INFO - Results for dataset LSST saved to benchmark_comparacao_LSST_2025-06-09_09-52-13.xlsx
+2025-06-09 09:52:13,617 - INFO - Processando dataset MotorImagery
+2025-06-09 09:52:13,617 - INFO - Carregando MotorImagery
+2025-06-09 09:52:13,617 - INFO - Iniciando em 2025-06-09 09:52:13
+2025-06-09 09:52:13,617 - INFO - Não foi possível carregar o dataset MotorImagery armazenados na máquina local
+2025-06-09 09:52:13,617 - INFO - Iniciando download do dataset MotorImagery
+2025-06-09 09:52:30,074 - INFO - Download finalizado com sucesso
+2025-06-09 09:52:30,074 - INFO - Tempo de carregamento: 16.456838369369507 segundos
+2025-06-09 09:52:30,167 - INFO - Dataset MotorImagery carregado em 16.550338745117188 segundos

@@ -1,0 +1,20 @@
+2025-06-09 14:35:59,814 - INFO - 
+=== Informações do Sistema ===
+2025-06-09 14:35:59,814 - INFO - Sistema operacional: posix
+2025-06-09 14:35:59,814 - INFO - Diretório atual: /home/user/Desktop/AlexandrePibic/pibic-2024-25
+2025-06-09 14:35:59,814 - INFO - AEON_DATA_PATH: /home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache
+2025-06-09 14:35:59,815 - INFO - Plataforma: Linux-6.11.0-26-generic-x86_64-with-glibc2.39
+2025-06-09 14:35:59,847 - INFO - Arquitetura: ('64bit', 'ELF')
+2025-06-09 14:35:59,848 - INFO - Versão do aeon: 1.1.0
+2025-06-09 14:35:59,848 - INFO - Versão do numpy: 1.26.4
+2025-06-09 14:35:59,848 - INFO - === Inspecionando dataset CharacterTrajectories ===
+2025-06-09 14:35:59,848 - INFO - Cache configurado em: /home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache
+2025-06-09 14:35:59,848 - INFO - Tentando carregar o dataset...
+2025-06-09 14:35:59,856 - INFO - Erro ao carregar dataset: channel 1 in case 159 has a different number of observations to the other channels. Saw 88 in the first channel but 99 in the channel 1. The meta data specifies equal length == False. But even if series length are unequal, all channels for a single case must be the same length
+2025-06-09 14:35:59,856 - INFO - Tipo do erro: OSError
+2025-06-09 14:35:59,856 - INFO - 
+=== Tentando analisar arquivos baixados ===
+2025-06-09 14:35:59,856 - INFO - Caminho do cache: /home/user/Desktop/AlexandrePibic/pibic-2024-25/aeon_cache
+2025-06-09 14:35:59,857 - INFO - Conteúdo do diretório de cache:
+2025-06-09 14:35:59,857 - INFO - 
+=== Inspeção finalizada ===

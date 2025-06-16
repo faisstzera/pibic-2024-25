@@ -1,0 +1,17 @@
+2025-06-09 12:03:39,051 - INFO - Processando dataset NATOPS
+2025-06-09 12:03:39,055 - INFO - Carregando NATOPS
+2025-06-09 12:03:39,056 - INFO - Iniciando em 2025-06-09 12:03:39
+2025-06-09 12:03:39,056 - INFO - Não foi possível carregar o dataset NATOPS armazenados na máquina local
+2025-06-09 12:03:39,056 - INFO - Iniciando download do dataset NATOPS
+2025-06-09 12:03:42,389 - INFO - Download finalizado com sucesso
+2025-06-09 12:03:42,389 - INFO - Tempo de carregamento: 3.333487033843994 segundos
+2025-06-09 12:03:42,466 - INFO - Dataset NATOPS carregado em 3.411362648010254 segundos
+2025-06-09 13:39:00,811 - INFO - Results for dataset NATOPS saved to benchmark_comparacao_NATOPS_2025-06-09_13-39-00.xlsx
+2025-06-09 13:39:00,811 - INFO - Processando dataset PEMS-SF
+2025-06-09 13:39:00,812 - INFO - Carregando PEMS-SF
+2025-06-09 13:39:00,812 - INFO - Iniciando em 2025-06-09 13:39:00
+2025-06-09 13:39:00,812 - INFO - Não foi possível carregar o dataset PEMS-SF armazenados na máquina local
+2025-06-09 13:39:00,812 - INFO - Iniciando download do dataset PEMS-SF
+2025-06-09 13:39:24,444 - INFO - Download finalizado com sucesso
+2025-06-09 13:39:24,444 - INFO - Tempo de carregamento: 23.631978034973145 segundos
+2025-06-09 13:39:24,542 - INFO - Dataset PEMS-SF carregado em 23.730468034744263 segundos

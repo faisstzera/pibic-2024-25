@@ -175,30 +175,13 @@ concatenate_types = ["pre_transform", "post_transform"]
 # classificador base
 classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))
 
-# se quiser rodar para mais datasets, basta incluir ou remover dessa listas
+# se quiser rodar para mais datasets, basta incluir ou remover dessa lista
+
 datasets = [
-    "ArticularyWordRecognition",
-    "CharacterTrajectories",
-    "Cricket", 
     "DuckDuckGeese",
-    "EigenWorms",
     "FaceDetection",
-    "FingerMovements",
-    "HandMovementDirection", 
-    "Handwriting",
-    "Heartbeat",
-    "InsectWingbeat",
-    "LSST",
     "MotorImagery",
-    "NATOPS",
-    "PEMS-SF",
-    "PenDigits",
-    "Phoneme",
-    "RacketSports",
-    "SelfRegulationSCP1",
-    "SelfRegulationSCP2",
-    "SpokenArabicDigits",
-    "StandWalkJump"
+    "InsectWingbeat",
 ]
 
 for dataset in datasets:

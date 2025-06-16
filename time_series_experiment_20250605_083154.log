@@ -1,0 +1,17 @@
+2025-06-05 08:31:54,896 - INFO - Processando dataset EigenWorms
+2025-06-05 08:31:54,896 - INFO - Carregando EigenWorms
+2025-06-05 08:31:54,897 - INFO - Iniciando em 2025-06-05 08:31:54
+2025-06-05 08:31:54,897 - INFO - Não foi possível carregar o dataset EigenWorms armazenados na máquina local
+2025-06-05 08:31:54,897 - INFO - Iniciando download do dataset EigenWorms
+2025-06-05 08:32:21,051 - INFO - Download finalizado com sucesso
+2025-06-05 08:32:21,051 - INFO - Tempo de carregamento: 26.154917001724243 segundos
+2025-06-05 08:32:21,123 - INFO - Dataset EigenWorms carregado em 26.227365493774414 segundos
+2025-06-05 08:36:43,588 - INFO - Results for dataset EigenWorms saved to benchmark_comparacao_EigenWorms_2025-06-05_08-36-43.xlsx
+2025-06-05 08:36:43,588 - INFO - Processando dataset FaceDetection
+2025-06-05 08:36:43,588 - INFO - Carregando FaceDetection
+2025-06-05 08:36:43,588 - INFO - Iniciando em 2025-06-05 08:36:43
+2025-06-05 08:36:43,588 - INFO - Não foi possível carregar o dataset FaceDetection armazenados na máquina local
+2025-06-05 08:36:43,588 - INFO - Iniciando download do dataset FaceDetection
+2025-06-05 08:37:32,521 - INFO - Download finalizado com sucesso
+2025-06-05 08:37:32,521 - INFO - Tempo de carregamento: 48.933406352996826 segundos
+2025-06-05 08:37:32,610 - INFO - Dataset FaceDetection carregado em 49.02217721939087 segundos
