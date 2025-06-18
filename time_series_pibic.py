@@ -135,6 +135,9 @@ def load_dataset(dataset_name, max_length=20):
 
             log_print("Download finalizado com sucesso")
 
+        # Print dos shapes ANTES da redução
+        log_print(f"ANTES da redução - X_train: {X_train.shape}, X_test: {X_test.shape}")
+
         # Reduzir dimensões logo após carregar
         log_print(f"Reduzindo dimensões para {max_length} pontos por série")
         
@@ -147,7 +150,8 @@ def load_dataset(dataset_name, max_length=20):
             X_train = X_train[:, :max_length]
             X_test = X_test[:, :max_length]
         
-        log_print(f"Formato final - X_train: {X_train.shape}, X_test: {X_test.shape}")
+        # Print dos shapes DEPOIS da redução
+        log_print(f"DEPOIS da redução - X_train: {X_train.shape}, X_test: {X_test.shape}")
 
         return {
             "X_train": X_train,
