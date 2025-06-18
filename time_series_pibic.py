@@ -114,7 +114,7 @@ def dimensions_concatenate(data, concatenate_type, representation):
     return np.array(new_data)
 
 # função para carregar o dataset
-def load_dataset(dataset_name, max_length=20):
+def load_dataset(dataset_name, max_dimensions=20):
     try:
         started_at = time.time()
         log_print(f"Carregando {dataset_name}")
@@ -138,17 +138,16 @@ def load_dataset(dataset_name, max_length=20):
         # Print dos shapes ANTES da redução
         log_print(f"ANTES da redução - X_train: {X_train.shape}, X_test: {X_test.shape}")
 
-        # Reduzir dimensões logo após carregar
-        log_print(f"Reduzindo dimensões para {max_length} pontos por série")
+        # Reduzir DIMENSÕES logo após carregar
+        log_print(f"Reduzindo para apenas as primeiras {max_dimensions} dimensões")
         
-        # Para dados multivariados: reduzir cada série temporal
+        # Para dados multivariados: reduzir o número de dimensões (2ª dimensão)
         if len(X_train.shape) == 3:  # (samples, dimensions, time_points)
-            X_train = X_train[:, :, :max_length]
-            X_test = X_test[:, :, :max_length]
-        # Para dados univariados: reduzir diretamente
+            X_train = X_train[:, :max_dimensions, :]
+            X_test = X_test[:, :max_dimensions, :]
+        # Para dados univariados: manter como está
         elif len(X_train.shape) == 2:  # (samples, time_points)
-            X_train = X_train[:, :max_length]
-            X_test = X_test[:, :max_length]
+            log_print("Dataset univariado - não há dimensões para reduzir")
         
         # Print dos shapes DEPOIS da redução
         log_print(f"DEPOIS da redução - X_train: {X_train.shape}, X_test: {X_test.shape}")
@@ -198,7 +197,7 @@ for dataset in datasets:
     ])
 
     try:
-        data = load_dataset(dataset)
+        data = load_dataset(dataset, max_dimensions=20)  # Usando max_dimensions ao invés de max_length
         X_train, y_train = data["X_train"], data["y_train"]
         X_test, y_test = data["X_test"], data["y_test"]
 
