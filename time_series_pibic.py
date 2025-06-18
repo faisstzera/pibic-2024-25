@@ -92,31 +92,29 @@ def dimensions_concatenate(data, concatenate_type, representation):
     
     for x in data:
         if concatenate_type == "pre_transform":
-            # aplica redução de dimensionalidade em cada série antes da concatenação
-            reduced_series =  [series[:20] for series in x]
-            concatenated_series = np.concatenate(reduced_series, axis=0)
+            # concatenar todas as dimensões antes da transformação
+            concatenated_series = np.concatenate(x, axis=0)
             image = transform_series(concatenated_series, representation)
             new_data.append(image.flatten())
             
             # liberar memória após o processamento
-            del reduced_series, concatenated_series, image
+            del concatenated_series, image
             
         elif concatenate_type == "post_transform":
-            # aplicar redução de dimensionalidade em cada série antes da transformação
-            reduced_series =  [series[:20] for series in x]
-            transformed_images = [transform_series(series, representation) for series in reduced_series]
+            # transformar cada dimensão separadamente e depois concatenar
+            transformed_images = [transform_series(series, representation) for series in x]
             concatenated_image = np.concatenate(transformed_images, axis=0)
             new_data.append(concatenated_image.flatten())
             
             # liberar memória após o processamento
-            del reduced_series, transformed_images, concatenated_image
+            del transformed_images, concatenated_image
     
     gc.collect()
     
     return np.array(new_data)
 
 # função para carregar o dataset
-def load_dataset(dataset_name):
+def load_dataset(dataset_name, max_length=20):
     try:
         started_at = time.time()
         log_print(f"Carregando {dataset_name}")
@@ -136,6 +134,20 @@ def load_dataset(dataset_name):
             X_test, y_test = load_classification(dataset_name, split="Test")
 
             log_print("Download finalizado com sucesso")
+
+        # Reduzir dimensões logo após carregar
+        log_print(f"Reduzindo dimensões para {max_length} pontos por série")
+        
+        # Para dados multivariados: reduzir cada série temporal
+        if len(X_train.shape) == 3:  # (samples, dimensions, time_points)
+            X_train = X_train[:, :, :max_length]
+            X_test = X_test[:, :, :max_length]
+        # Para dados univariados: reduzir diretamente
+        elif len(X_train.shape) == 2:  # (samples, time_points)
+            X_train = X_train[:, :max_length]
+            X_test = X_test[:, :max_length]
+        
+        log_print(f"Formato final - X_train: {X_train.shape}, X_test: {X_test.shape}")
 
         return {
             "X_train": X_train,
