@@ -1,0 +1,48 @@
+2025-06-28 12:28:12,982 - INFO - ==================================================
+2025-06-28 12:28:12,982 - INFO - INICIANDO CONSOLIDAÇÃO DE RESULTADOS
+2025-06-28 12:28:12,982 - INFO - ==================================================
+2025-06-28 12:28:13,047 - INFO - Arquivo ResultadosFinais.xlsx carregado com 396 registros
+2025-06-28 12:28:13,049 - INFO - Datasets já existentes: 10
+2025-06-28 12:28:13,050 - INFO - Encontrados 36 arquivos de benchmark
+2025-06-28 12:28:13,056 - INFO - Arquivo benchmark_comparacao_ArticularyWordRecognition_2025-06-04_13-09-07.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,065 - INFO - Arquivo benchmark_comparacao_CharacterTrajectories_2025-06-10_19-36-12.xlsx: 1 novos datasets: {'CharacterTrajectories'}
+2025-06-28 12:28:13,072 - INFO - Arquivo benchmark_comparacao_Cricket_2025-06-04_13-14-27.xlsx: 1 novos datasets: {'Cricket'}
+2025-06-28 12:28:13,078 - INFO - Arquivo benchmark_comparacao_DuckDuckGeese_2025-06-21_03-38-19.xlsx: 1 novos datasets: {'DuckDuckGeese'}
+2025-06-28 12:28:13,086 - INFO - Arquivo benchmark_comparacao_EigenWorms_2025-06-05_08-36-43.xlsx: 1 novos datasets: {'EigenWorms'}
+2025-06-28 12:28:13,094 - INFO - Arquivo benchmark_comparacao_FingerMovements_2025-06-05_14-02-51.xlsx: 1 novos datasets: {'FingerMovements'}
+2025-06-28 12:28:13,101 - INFO - Arquivo benchmark_comparacao_HandMovementDirection_2025-06-05_14-12-27.xlsx: 1 novos datasets: {'HandMovementDirection'}
+2025-06-28 12:28:13,108 - INFO - Arquivo benchmark_comparacao_Handwriting_2025-06-05_14-16-36.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,116 - INFO - Arquivo benchmark_comparacao_Heartbeat_2025-06-06_04-50-34.xlsx: 1 novos datasets: {'Heartbeat'}
+2025-06-28 12:28:13,122 - INFO - Arquivo benchmark_comparacao_LSST_2025-06-09_09-52-13.xlsx: 1 novos datasets: {'LSST'}
+2025-06-28 12:28:13,129 - INFO - Arquivo benchmark_comparacao_NATOPS_2025-06-09_13-39-00.xlsx: 1 novos datasets: {'NATOPS'}
+2025-06-28 12:28:13,137 - INFO - Arquivo benchmark_comparacao_PenDigits_2025-06-10_20-14-25.xlsx: 1 novos datasets: {'PenDigits'}
+2025-06-28 12:28:13,144 - INFO - Arquivo benchmark_comparacao_Phoneme_2025-06-10_20-16-23.xlsx: 1 novos datasets: {'Phoneme'}
+2025-06-28 12:28:13,151 - INFO - Arquivo benchmark_comparacao_RacketSports_2025-06-10_20-20-55.xlsx: 1 novos datasets: {'RacketSports'}
+2025-06-28 12:28:13,164 - INFO - Arquivo benchmark_comparacao_SelfRegulationSCP1_2025-06-10_20-29-24.xlsx: 1 novos datasets: {'SelfRegulationSCP1'}
+2025-06-28 12:28:13,175 - INFO - Arquivo benchmark_comparacao_SelfRegulationSCP2_2025-06-10_20-37-04.xlsx: 1 novos datasets: {'SelfRegulationSCP2'}
+2025-06-28 12:28:13,187 - INFO - Arquivo benchmark_comparacao_SpokenArabicDigits_2025-06-11_06-33-14.xlsx: 1 novos datasets: {'SpokenArabicDigits'}
+2025-06-28 12:28:13,196 - INFO - Arquivo benchmark_comparacao_StandWalkJump_2025-06-11_06-33-46.xlsx: 1 novos datasets: {'StandWalkJump'}
+2025-06-28 12:28:13,205 - INFO - Arquivo benchmark_comparacao_Cricket_2025-06-04_13-14-27.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,213 - INFO - Arquivo benchmark_comparacao_DuckDuckGeese_2025-06-21_03-38-19.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,220 - INFO - Arquivo benchmark_comparacao_EigenWorms_2025-06-05_08-36-43.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,244 - INFO - Arquivo benchmark_comparacao_FingerMovements_2025-06-05_14-02-51.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,251 - INFO - Arquivo benchmark_comparacao_HandMovementDirection_2025-06-05_14-12-27.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,257 - INFO - Arquivo benchmark_comparacao_Heartbeat_2025-06-06_04-50-34.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,263 - INFO - Arquivo benchmark_comparacao_LSST_2025-06-09_09-52-13.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,270 - INFO - Arquivo benchmark_comparacao_NATOPS_2025-06-09_13-39-00.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,277 - INFO - Arquivo benchmark_comparacao_PenDigits_2025-06-10_20-14-25.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,284 - INFO - Arquivo benchmark_comparacao_Phoneme_2025-06-10_20-16-23.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,291 - INFO - Arquivo benchmark_comparacao_RacketSports_2025-06-10_20-20-55.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,298 - INFO - Arquivo benchmark_comparacao_SelfRegulationSCP1_2025-06-10_20-29-24.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,305 - INFO - Arquivo benchmark_comparacao_SelfRegulationSCP2_2025-06-10_20-37-04.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,314 - INFO - Arquivo benchmark_comparacao_SpokenArabicDigits_2025-06-11_06-33-14.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,321 - INFO - Arquivo benchmark_comparacao_StandWalkJump_2025-06-11_06-33-46.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,328 - INFO - Arquivo benchmark_comparacao_BasicMotions_2025-05-21_23-45-14.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,335 - INFO - Arquivo benchmark_comparacao_Epilepsy_2025-05-22_05-47-12.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,342 - INFO - Arquivo benchmark_comparacao_EthanolConcentration_2025-05-22_05-53-25.xlsx: nenhum dataset novo encontrado
+2025-06-28 12:28:13,435 - INFO - Consolidação concluída!
+2025-06-28 12:28:13,435 - INFO - Total de registros no arquivo final: 954
+2025-06-28 12:28:13,435 - INFO - Novos registros adicionados: 558
+2025-06-28 12:28:13,436 - INFO - Total de datasets únicos: 26
+2025-06-28 12:28:13,436 - INFO - Datasets no arquivo final: ['ArticularyWordRecognition', 'AtrialFibrillation', 'BasicMotions', 'CharacterTrajectories', 'Cricket', 'DuckDuckGeese', 'ERing', 'EigenWorms', 'Epilepsy', 'EthanolConcentration', 'FingerMovements', 'HandMovementDirection', 'Handwriting', 'Heartbeat', 'JapaneseVowels', 'LSST', 'Libras', 'NATOPS', 'PenDigits', 'Phoneme', 'RacketSports', 'SelfRegulationSCP1', 'SelfRegulationSCP2', 'SpokenArabicDigits', 'StandWalkJump', 'UWaveGestureLibrary']
+2025-06-28 12:28:13,436 - INFO - Consolidação concluída com sucesso!
