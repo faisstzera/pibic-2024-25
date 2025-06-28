@@ -1,0 +1,11 @@
+2025-06-23 10:01:25,592 - INFO - Processando dataset FaceDetection
+2025-06-23 10:01:25,593 - INFO - Carregando FaceDetection
+2025-06-23 10:01:25,593 - INFO - Iniciando em 2025-06-23 10:01:25
+2025-06-23 10:01:25,593 - INFO - Não foi possível carregar o dataset FaceDetection armazenados na máquina local
+2025-06-23 10:01:25,593 - INFO - Iniciando download do dataset FaceDetection
+2025-06-23 10:01:36,207 - INFO - Download finalizado com sucesso
+2025-06-23 10:01:36,207 - INFO - ANTES da redução - X_train: (5890, 144, 62), X_test: (3524, 144, 62)
+2025-06-23 10:01:36,207 - INFO - Reduzindo para apenas as primeiras 20 dimensões
+2025-06-23 10:01:36,207 - INFO - DEPOIS da redução - X_train: (5890, 20, 62), X_test: (3524, 20, 62)
+2025-06-23 10:01:36,207 - INFO - Tempo de carregamento: 10.614252090454102 segundos
+2025-06-23 10:01:36,281 - INFO - Dataset FaceDetection carregado em 10.688858032226562 segundos

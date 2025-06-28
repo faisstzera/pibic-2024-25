@@ -172,8 +172,6 @@ classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))
 # se quiser rodar para mais datasets, basta incluir ou remover dessa lista
 
 datasets = [
-    "DuckDuckGeese",
-    "FaceDetection",
     "MotorImagery",
     "InsectWingbeat",
 ]

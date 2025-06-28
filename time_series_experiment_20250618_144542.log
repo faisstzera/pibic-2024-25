@@ -1,0 +1,11 @@
+2025-06-18 14:45:42,491 - INFO - Processando dataset DuckDuckGeese
+2025-06-18 14:45:42,492 - INFO - Carregando DuckDuckGeese
+2025-06-18 14:45:42,492 - INFO - Iniciando em 2025-06-18 14:45:42
+2025-06-18 14:45:42,492 - INFO - Não foi possível carregar o dataset DuckDuckGeese armazenados na máquina local
+2025-06-18 14:45:42,492 - INFO - Iniciando download do dataset DuckDuckGeese
+2025-06-18 14:45:46,827 - INFO - Download finalizado com sucesso
+2025-06-18 14:45:46,828 - INFO - ANTES da redução - X_train: (50, 1345, 270), X_test: (50, 1345, 270)
+2025-06-18 14:45:46,828 - INFO - Reduzindo para apenas as primeiras 20 dimensões
+2025-06-18 14:45:46,828 - INFO - DEPOIS da redução - X_train: (50, 20, 270), X_test: (50, 20, 270)
+2025-06-18 14:45:46,828 - INFO - Tempo de carregamento: 4.335845947265625 segundos
+2025-06-18 14:45:46,953 - INFO - Dataset DuckDuckGeese carregado em 4.461517333984375 segundos

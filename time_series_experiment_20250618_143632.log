@@ -1,0 +1,23 @@
+2025-06-18 14:36:32,649 - INFO - Processando dataset DuckDuckGeese
+2025-06-18 14:36:32,650 - INFO - Carregando DuckDuckGeese
+2025-06-18 14:36:32,650 - INFO - Iniciando em 2025-06-18 14:36:32
+2025-06-18 14:36:32,650 - INFO - Não foi possível carregar o dataset DuckDuckGeese armazenados na máquina local
+2025-06-18 14:36:32,650 - INFO - Iniciando download do dataset DuckDuckGeese
+2025-06-18 14:36:36,988 - INFO - Download finalizado com sucesso
+2025-06-18 14:36:36,988 - INFO - ANTES da redução - X_train: (50, 1345, 270), X_test: (50, 1345, 270)
+2025-06-18 14:36:36,988 - INFO - Reduzindo para apenas as primeiras 20 dimensões
+2025-06-18 14:36:36,988 - INFO - DEPOIS da redução - X_train: (50, 20, 270), X_test: (50, 20, 270)
+2025-06-18 14:36:36,988 - INFO - Tempo de carregamento: 4.338623523712158 segundos
+2025-06-18 14:36:37,112 - INFO - Dataset DuckDuckGeese carregado em 4.462539434432983 segundos
+2025-06-21 03:38:19,176 - INFO - Results for dataset DuckDuckGeese saved to benchmark_comparacao_DuckDuckGeese_2025-06-21_03-38-19.xlsx
+2025-06-21 03:38:19,176 - INFO - Processando dataset FaceDetection
+2025-06-21 03:38:19,176 - INFO - Carregando FaceDetection
+2025-06-21 03:38:19,176 - INFO - Iniciando em 2025-06-21 03:38:19
+2025-06-21 03:38:19,176 - INFO - Não foi possível carregar o dataset FaceDetection armazenados na máquina local
+2025-06-21 03:38:19,176 - INFO - Iniciando download do dataset FaceDetection
+2025-06-21 03:39:10,647 - INFO - Download finalizado com sucesso
+2025-06-21 03:39:10,647 - INFO - ANTES da redução - X_train: (5890, 144, 62), X_test: (3524, 144, 62)
+2025-06-21 03:39:10,647 - INFO - Reduzindo para apenas as primeiras 20 dimensões
+2025-06-21 03:39:10,647 - INFO - DEPOIS da redução - X_train: (5890, 20, 62), X_test: (3524, 20, 62)
+2025-06-21 03:39:10,647 - INFO - Tempo de carregamento: 51.4711332321167 segundos
+2025-06-21 03:39:10,782 - INFO - Dataset FaceDetection carregado em 51.60623788833618 segundos
